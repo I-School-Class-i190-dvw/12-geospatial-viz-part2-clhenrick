@@ -9,6 +9,7 @@
   <!-- load the d3 library locally -->
   <!-- we could load the non-minified version, plain old "d3.js", for debugging purposes instead if desired -->
   <script src="./lib/d3.min.js"></script>
+  <script src="//d3js.org/d3-tile.v0.0.min.js"></script>
 
   <!-- Our CSS goes within the <style> tag -->
   <!-- Like JS, we could also link to an external CSS file using the <link /> tag -->
@@ -19,6 +20,17 @@
       padding: 0;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
+    
+    path {
+      fill: red;
+      stroke: none;
+      fill-opacity: 0.6;
+      stroke-linejoin: round;
+    }
+    
+    path:hover {
+      fill-opacity: 1;
+    }
   </style>
 
 </head>
@@ -26,4 +38,14 @@
 <!-- all visible HTML goes within the <body> tag -->
 <body>
   <!-- TO DO: add script tags for your main.js file -->
+  <script src="main.js"></script>
 </body>
+
+
+
+
+
+
+
+
+<!--  -->
